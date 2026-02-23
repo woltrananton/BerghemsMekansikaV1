@@ -725,8 +725,8 @@ footer {
 }
 
 .about-gear {
-    width: 200px;
-    height: 200px;
+    width: clamp(140px, 25vw, 200px);
+    height: clamp(140px, 25vw, 200px);
     stroke: var(--border-active);
     fill: none;
     stroke-width: 0.5;
@@ -735,8 +735,8 @@ footer {
 
 .about-gear-2 {
     position: absolute;
-    width: 120px;
-    height: 120px;
+    width: clamp(80px, 15vw, 120px);
+    height: clamp(80px, 15vw, 120px);
     top: 20%;
     right: 15%;
     stroke: rgba(255, 107, 44, 0.15);
@@ -755,10 +755,10 @@ footer {
 
 .about-year {
     position: absolute;
-    bottom: 2rem;
-    left: 2rem;
+    bottom: clamp(1rem, 4vw, 2rem);
+    left: clamp(1rem, 4vw, 2rem);
     font-family: var(--font-display);
-    font-size: 6rem;
+    font-size: clamp(4rem, 12vw, 6rem);
     color: rgba(74, 142, 255, 0.06);
     line-height: 1;
     letter-spacing: 4px;
