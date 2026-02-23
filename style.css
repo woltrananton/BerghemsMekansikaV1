@@ -878,6 +878,87 @@ footer {
 }
 
 /* ═══════════════════════════════════════════════
+   PROJECTS SECTION
+   ═══════════════════════════════════════════════ */
+.projects {
+    padding: 8rem 2rem;
+    background: var(--bg-primary);
+    position: relative;
+}
+
+.projects-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.project-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+}
+
+.project-card:hover {
+    border-color: var(--steel-blue);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.project-image {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background: var(--bg-tertiary);
+    border-bottom: 1px solid var(--border-subtle);
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card:hover .project-image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, rgba(74, 142, 255, 0.1), transparent);
+    pointer-events: none;
+}
+
+.project-content {
+    padding: 2.5rem;
+}
+
+.project-tag {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--steel-blue);
+    background: rgba(74, 142, 255, 0.1);
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.project-title {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+}
+
+.project-desc {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+/* ═══════════════════════════════════════════════
    CONTACT SECTION
    ═══════════════════════════════════════════════ */
 .contact {
@@ -1193,6 +1274,10 @@ footer {
         display: none;
     }
 
+    .projects-grid {
+        gap: 1.5rem;
+    }
+
     .contact-inner {
         grid-template-columns: 1fr;
     }
@@ -1243,6 +1328,10 @@ footer {
     .process-steps {
         grid-template-columns: 1fr;
         gap: 2.5rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
 
     .contact-form-wrap {

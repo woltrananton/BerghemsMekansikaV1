@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logga in – Berghemsmekaniska</title>
+    <meta name="description" content="Logga in på Berghemsmekaniskas användarportal.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .login-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8rem 2rem 4rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .login-container {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            padding: 3.5rem 3rem;
+            width: 100%;
+            max-width: 460px;
+            clip-path: polygon(0 0, calc(100% - 24px) 0, 100% 24px, 100% 100%, 24px 100%, 0 calc(100% - 24px));
+            position: relative;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+        }
+
+        .login-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--steel-glow), transparent 40%);
+            pointer-events: none;
+            opacity: 0.5;
+        }
+
+        .login-header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .login-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 2.5rem;
+        }
+
+        .login-forgot {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .login-forgot:hover {
+            color: var(--steel-blue);
+        }
+
+        .login-back {
+            text-align: center;
+            margin-top: 2.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-subtle);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ═══════════ NAVIGATION ═══════════ -->
+    <nav class="nav" id="nav">
+        <a href="index.html" class="nav-logo">
+            <img src="Bilder/logo_berghems.png" alt="Berghems Logga" class="nav-logo-img">
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html#tjanster">Tjänster</a></li>
+            <li><a href="index.html#om-oss">Om oss</a></li>
+            <li><a href="index.html#process">Process</a></li>
+            <li><a href="index.html#kontakt">Kontakt</a></li>
+            <li><a href="login.html" class="btn btn-primary"
+                    style="padding: 0.5rem 1.2rem; font-size: 0.85rem; color: #000; clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));">Logga
+                    in</a></li>
+        </ul>
+        <button class="nav-hamburger" id="hamburger" aria-label="Meny">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-menu-links">
+            <li><a href="index.html#tjanster" onclick="closeMobile()">Tjänster</a></li>
+            <li><a href="index.html#om-oss" onclick="closeMobile()">Om oss</a></li>
+            <li><a href="index.html#process" onclick="closeMobile()">Process</a></li>
+            <li><a href="index.html#kontakt" onclick="closeMobile()">Kontakt</a></li>
+            <li style="margin-top: 2rem;"><a href="login.html" class="btn btn-primary"
+                    style="padding: 1rem 2rem; font-size: 1rem; color: #000; clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));">Logga
+                    in</a></li>
+        </ul>
+    </div>
+
+    <!-- ═══════════ LOGIN ═══════════ -->
+    <section class="login-page">
+        <!-- Decorative elements from hero -->
+        <div class="hero-bg"></div>
+        <div class="hero-crosshair" style="top: 15%; right: 15%;">
+            <div class="hero-crosshair-circle"></div>
+        </div>
+
+        <div class="login-container reveal visible">
+            <div class="login-header">
+                <div class="section-tag" style="justify-content: center; margin-bottom: 1rem;">Användarportal</div>
+                <h2 class="section-title">LOGGA IN</h2>
+            </div>
+
+            <form id="loginForm"
+                onsubmit="event.preventDefault(); alert('Inloggningsfunktionen är ännu inte implementerad.');">
+                <div class="form-group">
+                    <label class="form-label">E-post / Användarnamn</label>
+                    <input type="text" class="form-input" placeholder="Ange e-post eller användarnamn" required>
+                </div>
+                <div class="form-group" style="margin-top: 1.5rem;">
+                    <label class="form-label">Lösenord</label>
+                    <input type="password" class="form-input" placeholder="Ange lösenord" required>
+                </div>
+
+                <div class="login-actions">
+                    <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                        Logga in
+                        <span class="btn-arrow">&rarr;</span>
+                    </button>
+                </div>
+
+                <div style="text-align: center; margin-top: 1.5rem;">
+                    <a href="#" class="login-forgot">Glömt lösenordet?</a>
+                </div>
+            </form>
+
+            <div class="login-back">
+                <a href="index.html" class="btn btn-outline" style="font-size: 0.75rem; padding: 0.6rem 1.2rem;">
+                    &larr; Tillbaka till startsidan
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ SPARK PARTICLES ═══════════ -->
+    <canvas id="sparks-canvas"></canvas>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

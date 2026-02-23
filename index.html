@@ -18,15 +18,18 @@
 
     <!-- ═══════════ NAVIGATION ═══════════ -->
     <nav class="nav" id="nav">
-        <a href="#" class="nav-logo">
+        <a href="index.html" class="nav-logo">
             <img src="Bilder/logo_berghems.png" alt="Berghems Logga" class="nav-logo-img">
-
         </a>
         <ul class="nav-links">
             <li><a href="#tjanster">Tjänster</a></li>
             <li><a href="#om-oss">Om oss</a></li>
             <li><a href="#process">Process</a></li>
+            <li><a href="#projekt">Projekt</a></li>
             <li><a href="#kontakt">Kontakt</a></li>
+            <li><a href="login.html" class="btn btn-primary"
+                    style="padding: 0.5rem 1.2rem; font-size: 0.85rem; color: #000; clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));">Logga
+                    in</a></li>
         </ul>
         <button class="nav-hamburger" id="hamburger" aria-label="Meny">
             <span></span>
@@ -41,7 +44,11 @@
             <li><a href="#tjanster" onclick="closeMobile()">Tjänster</a></li>
             <li><a href="#om-oss" onclick="closeMobile()">Om oss</a></li>
             <li><a href="#process" onclick="closeMobile()">Process</a></li>
+            <li><a href="#projekt" onclick="closeMobile()">Projekt</a></li>
             <li><a href="#kontakt" onclick="closeMobile()">Kontakt</a></li>
+            <li style="margin-top: 2rem;"><a href="login.html" class="btn btn-primary"
+                    style="padding: 1rem 2rem; font-size: 1rem; color: #000; clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));">Logga
+                    in</a></li>
         </ul>
     </div>
 
@@ -302,6 +309,81 @@
         </div>
     </section>
 
+    <!-- ═══════════ PÅGÅENDE PROJEKT ═══════════ -->
+    <section class="projects" id="projekt">
+        <div class="section-header reveal">
+            <div class="section-tag">Vad vi jobbar med nu</div>
+            <h2 class="section-title">PÅGÅENDE PROJEKT</h2>
+            <p class="section-subtitle">En inblick i några av våra aktuella tillverknings- och konstruktionsuppdrag.</p>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card reveal">
+                <div class="project-image">
+                    <!-- Placeholder placeholder for project image -->
+                    <div
+                        style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: var(--bg-primary); color: var(--text-muted); font-family: var(--font-display); letter-spacing: 2px;">
+                        BILD 1</div>
+                </div>
+                <div class="project-content">
+                    <span class="project-tag">CNC-fräsning</span>
+                    <h3 class="project-title">Komponenter till Processindustrin</h3>
+                    <p class="project-desc">Serietillverkning av högprecisionsdetaljer i syrafast rostfritt stål för
+                        krävande miljöer.</p>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card reveal reveal-delay-1">
+                <div class="project-image">
+                    <!-- Placeholder placeholder for project image -->
+                    <div
+                        style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: var(--bg-primary); color: var(--text-muted); font-family: var(--font-display); letter-spacing: 2px;">
+                        BILD 2</div>
+                </div>
+                <div class="project-content">
+                    <span class="project-tag">Konstruktion & Svetsning</span>
+                    <h3 class="project-title">Specialbyggd Lyftutrustning</h3>
+                    <p class="project-desc">Från CAD-ritning till färdig svetsad och certifierad lyftkonstruktion för
+                        lokal industri.</p>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card reveal reveal-delay-2">
+                <div class="project-image">
+                    <!-- Placeholder placeholder for project image -->
+                    <div
+                        style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: var(--bg-primary); color: var(--text-muted); font-family: var(--font-display); letter-spacing: 2px;">
+                        BILD 3</div>
+                </div>
+                <div class="project-content">
+                    <span class="project-tag">Svarvning & Montering</span>
+                    <h3 class="project-title">Drivaxlar i Aluminium</h3>
+                    <p class="project-desc">Specialanpassade drivaxlar med snäva toleranser, inklusive montering av
+                        lager och tätningar.</p>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card reveal reveal-delay-3">
+                <div class="project-image">
+                    <!-- Placeholder placeholder for project image -->
+                    <div
+                        style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: var(--bg-primary); color: var(--text-muted); font-family: var(--font-display); letter-spacing: 2px;">
+                        BILD 4</div>
+                </div>
+                <div class="project-content">
+                    <span class="project-tag">Prototypframtagning</span>
+                    <h3 class="project-title">Koncept för Förpackningsmaskin</h3>
+                    <p class="project-desc">Utveckling och tillverkning av första testprototypen för en ny funktion i en
+                        automatiserad förpackningslina.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ═══════════ CONTACT ═══════════ -->
     <section class="contact" id="kontakt">
         <div class="contact-inner">
@@ -322,7 +404,7 @@
                     </div>
                     <div>
                         <div class="contact-detail-label">Adress</div>
-                        <div class="contact-detail-value">Berghems Industriområde<br>Berghem, Sverige</div>
+                        <div class="contact-detail-value">Gnejsvägen 11<br>511 91 Skene</div>
                     </div>
                 </div>
 
@@ -382,6 +464,8 @@
             </div>
         </div>
     </section>
+
+
 
     <!-- ═══════════ FOOTER ═══════════ -->
     <footer class="footer">
