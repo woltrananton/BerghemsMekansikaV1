@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berghemsmekaniska – Från idé till färdig produkt</title>
+    <meta name="description"
+        content="Berghemsmekaniska är en pålitlig samarbetspartner inom verkstads- och industribranschen. CAD-modellering, svetsning, CNC-fräsning och svarvning med 50+ års erfarenhet.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ═══════════ NAVIGATION ═══════════ -->
+    <nav class="nav" id="nav">
+        <a href="#" class="nav-logo">
+            <img src="Bilder/logo_berghems.png" alt="Berghems Logga" class="nav-logo-img">
+
+        </a>
+        <ul class="nav-links">
+            <li><a href="#tjanster">Tjänster</a></li>
+            <li><a href="#om-oss">Om oss</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+        <button class="nav-hamburger" id="hamburger" aria-label="Meny">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-menu-links">
+            <li><a href="#tjanster" onclick="closeMobile()">Tjänster</a></li>
+            <li><a href="#om-oss" onclick="closeMobile()">Om oss</a></li>
+            <li><a href="#process" onclick="closeMobile()">Process</a></li>
+            <li><a href="#kontakt" onclick="closeMobile()">Kontakt</a></li>
+        </ul>
+    </div>
+
+    <!-- ═══════════ HERO ═══════════ -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+
+        <!-- Decorative elements -->
+        <div class="hero-line hero-line-1"></div>
+        <div class="hero-line hero-line-2"></div>
+        <div class="hero-line hero-line-3"></div>
+
+        <div class="hero-crosshair">
+            <div class="hero-crosshair-circle"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-tag">Verkstad &amp; Industri sedan 1970-talet</div>
+            <h1 class="hero-title">
+                PRECISION I<br>
+                VARJE <span class="highlight">DETALJ</span>
+            </h1>
+            <p class="hero-description">
+                Vi är en pålitlig samarbetspartner inom verkstads- och industribranschen, hela vägen från idéutveckling
+                till färdig produkt.
+            </p>
+            <div class="hero-actions">
+                <a href="#tjanster" class="btn btn-primary">
+                    Våra tjänster
+                    <span class="btn-arrow">&rarr;</span>
+                </a>
+                <a href="#kontakt" class="btn btn-outline">
+                    Kontakta oss
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            <span class="hero-scroll-text">Scrolla</span>
+            <div class="hero-scroll-line"></div>
+        </div>
+
+        <div class="hero-diagonal"></div>
+    </section>
+
+    <!-- ═══════════ STATS ═══════════ -->
+    <section class="stats">
+        <div class="stats-inner">
+            <div class="stat-item reveal">
+                <div class="stat-number" data-target="50">0</div>
+                <div class="stat-label">Års erfarenhet</div>
+            </div>
+            <div class="stat-item reveal reveal-delay-1">
+                <div class="stat-number" data-target="4">0</div>
+                <div class="stat-label">Kärnkompetenser</div>
+            </div>
+            <div class="stat-item reveal reveal-delay-2">
+                <div class="stat-number" data-target="1000">0</div>
+                <div class="stat-label">Projekt levererade</div>
+            </div>
+            <div class="stat-item reveal reveal-delay-3">
+                <div class="stat-number" data-target="100">0</div>
+                <div class="stat-label">% Engagemang</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ SERVICES ═══════════ -->
+    <section class="services" id="tjanster">
+        <div class="section-header reveal">
+            <div class="section-tag">Vad vi erbjuder</div>
+            <h2 class="section-title">VÅRA TJÄNSTER</h2>
+            <p class="section-subtitle">Komplett maskinpark och erfarna specialister för alla typer av verkstadsarbeten.
+            </p>
+        </div>
+
+        <div class="services-grid">
+            <!-- CAD -->
+            <div class="service-card reveal">
+                <span class="service-number">01</span>
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                    </svg>
+                </div>
+                <h3 class="service-name">CAD-MODELLERING</h3>
+                <p class="service-desc">
+                    Avancerad 3D-modellering och konstruktion. Vi tar era idéer från koncept till detaljerade ritningar
+                    redo för produktion, med precision ner till minsta millimeter.
+                </p>
+            </div>
+
+            <!-- Svetsning -->
+            <div class="service-card reveal reveal-delay-1">
+                <span class="service-number">02</span>
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                        <path d="M2 17l10 5 10-5" />
+                        <path d="M2 12l10 5 10-5" />
+                    </svg>
+                </div>
+                <h3 class="service-name">SVETSNING</h3>
+                <p class="service-desc">
+                    Certifierad svetsning i alla vanliga material. MIG, TIG och bågsvetsning med högsta kvalitet — från
+                    enstaka detaljer till serieproduktion.
+                </p>
+            </div>
+
+            <!-- CNC-fräsning -->
+            <div class="service-card reveal reveal-delay-2">
+                <span class="service-number">03</span>
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24">
+                        <rect x="3" y="3" width="18" height="18" rx="2" />
+                        <path d="M9 3v18" />
+                        <path d="M15 3v18" />
+                        <path d="M3 9h18" />
+                        <path d="M3 15h18" />
+                    </svg>
+                </div>
+                <h3 class="service-name">CNC-FRÄSNING</h3>
+                <p class="service-desc">
+                    Högprecisions CNC-fräsning för komplexa geometrier. Vår moderna maskinpark hanterar allt från
+                    prototyper till längre serier med repeterbar noggrannhet.
+                </p>
+            </div>
+
+            <!-- Svarvning -->
+            <div class="service-card reveal reveal-delay-3">
+                <span class="service-number">04</span>
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="9" />
+                        <circle cx="12" cy="12" r="4" />
+                        <line x1="12" y1="3" x2="12" y2="8" />
+                        <line x1="12" y1="16" x2="12" y2="21" />
+                    </svg>
+                </div>
+                <h3 class="service-name">SVARVNING</h3>
+                <p class="service-desc">
+                    Konventionell och CNC-svarvning för roterande detaljer. Vi svarvar i stål, aluminium, mässing och
+                    plast med toleranser som möter industrins krav.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ ABOUT ═══════════ -->
+    <section class="about" id="om-oss">
+        <div class="about-diagonal-top"></div>
+
+        <div class="about-inner">
+            <div class="about-visual reveal">
+                <div class="about-visual-box">
+                    <div class="about-gear-container">
+                        <!-- Large gear -->
+                        <svg class="about-gear" viewBox="0 0 100 100">
+                            <path
+                                d="M50 10 L53 20 A30 30 0 0 1 65 25 L73 17 L78 22 L72 32 A30 30 0 0 1 78 43 L88 43 L88 50 L78 52 A30 30 0 0 1 73 64 L80 72 L75 78 L66 72 A30 30 0 0 1 55 77 L53 88 L47 88 L45 77 A30 30 0 0 1 34 72 L25 78 L20 73 L27 64 A30 30 0 0 1 22 52 L12 50 L12 43 L22 43 A30 30 0 0 1 27 32 L20 22 L25 17 L35 25 A30 30 0 0 1 47 20 L50 10Z" />
+                            <circle cx="50" cy="50" r="15" />
+                        </svg>
+                        <!-- Small gear -->
+                        <svg class="about-gear about-gear-2" viewBox="0 0 100 100">
+                            <path
+                                d="M50 10 L53 20 A30 30 0 0 1 65 25 L73 17 L78 22 L72 32 A30 30 0 0 1 78 43 L88 43 L88 50 L78 52 A30 30 0 0 1 73 64 L80 72 L75 78 L66 72 A30 30 0 0 1 55 77 L53 88 L47 88 L45 77 A30 30 0 0 1 34 72 L25 78 L20 73 L27 64 A30 30 0 0 1 22 52 L12 50 L12 43 L22 43 A30 30 0 0 1 27 32 L20 22 L25 17 L35 25 A30 30 0 0 1 47 20 L50 10Z" />
+                            <circle cx="50" cy="50" r="15" />
+                        </svg>
+                    </div>
+                    <div class="about-year">1970</div>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <div class="section-tag reveal">Vår historia</div>
+                <h2 class="section-title reveal">MER ÄN 50 ÅRS<br>ERFARENHET</h2>
+                <p class="about-text reveal">
+                    Några av våra starkaste sidor är just problemlösning och idéutveckling. Med mer än 50 års erfarenhet
+                    vet vi hur man lättast löser ett komplext problem.
+                </p>
+                <p class="about-text reveal">
+                    Tillsammans med vår kompletta maskinpark och erfarna personal är vi mycket konkurrenskraftiga inom
+                    detalj- och komponenttillverkning. Vi tar oss an allt från enstaka prototyper till serieproduktion.
+                </p>
+
+                <div class="about-features reveal">
+                    <div class="about-feature">
+                        <div class="about-feature-dot"></div>
+                        Problemlösning
+                    </div>
+                    <div class="about-feature">
+                        <div class="about-feature-dot"></div>
+                        Idéutveckling
+                    </div>
+                    <div class="about-feature">
+                        <div class="about-feature-dot"></div>
+                        Prototypframtagning
+                    </div>
+                    <div class="about-feature">
+                        <div class="about-feature-dot"></div>
+                        Serieproduktion
+                    </div>
+                    <div class="about-feature">
+                        <div class="about-feature-dot"></div>
+                        Komplett maskinpark
+                    </div>
+                    <div class="about-feature">
+                        <div class="about-feature-dot"></div>
+                        Erfaren personal
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ PROCESS ═══════════ -->
+    <section class="process" id="process">
+        <div class="section-header reveal">
+            <div class="section-tag">Så arbetar vi</div>
+            <h2 class="section-title">FRÅN IDÉ TILL PRODUKT</h2>
+            <p class="section-subtitle">En beprövad process som levererar resultat, varje gång.</p>
+        </div>
+
+        <div class="process-steps">
+            <div class="process-step reveal">
+                <div class="process-step-circle">
+                    <span class="process-step-num">01</span>
+                </div>
+                <h3 class="process-step-title">IDÉ & ANALYS</h3>
+                <p class="process-step-desc">Vi lyssnar på era behov och analyserar uppgiften för att hitta bästa
+                    lösning.</p>
+            </div>
+            <div class="process-step reveal reveal-delay-1">
+                <div class="process-step-circle">
+                    <span class="process-step-num">02</span>
+                </div>
+                <h3 class="process-step-title">KONSTRUKTION</h3>
+                <p class="process-step-desc">CAD-modellering och detaljerade ritningar med hänsyn till funktion och
+                    tillverkning.</p>
+            </div>
+            <div class="process-step reveal reveal-delay-2">
+                <div class="process-step-circle">
+                    <span class="process-step-num">03</span>
+                </div>
+                <h3 class="process-step-title">TILLVERKNING</h3>
+                <p class="process-step-desc">CNC-fräsning, svarvning och svetsning med precision och kvalitetskontroll.
+                </p>
+            </div>
+            <div class="process-step reveal reveal-delay-3">
+                <div class="process-step-circle">
+                    <span class="process-step-num">04</span>
+                </div>
+                <h3 class="process-step-title">LEVERANS</h3>
+                <p class="process-step-desc">Slutkontroll och leverans av färdig produkt — redo att monteras och
+                    användas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ CONTACT ═══════════ -->
+    <section class="contact" id="kontakt">
+        <div class="contact-inner">
+            <div class="contact-info">
+                <div class="section-tag reveal">Hör av er</div>
+                <h2 class="contact-info-title reveal">LÅT OSS PRATA<br>OM ERT PROJEKT</h2>
+                <p class="contact-info-text reveal">
+                    Oavsett om ni har en färdig ritning eller bara en idé — vi hjälper er hela vägen. Kontakta oss så
+                    diskuterar vi hur vi bäst kan lösa ert behov.
+                </p>
+
+                <div class="contact-detail reveal">
+                    <div class="contact-detail-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="contact-detail-label">Adress</div>
+                        <div class="contact-detail-value">Berghems Industriområde<br>Berghem, Sverige</div>
+                    </div>
+                </div>
+
+                <div class="contact-detail reveal">
+                    <div class="contact-detail-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="contact-detail-label">Telefon</div>
+                        <div class="contact-detail-value"><a href="tel:+46XXXXXXXXX">0XXX-XX XX XX</a></div>
+                    </div>
+                </div>
+
+                <div class="contact-detail reveal">
+                    <div class="contact-detail-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="contact-detail-label">E-post</div>
+                        <div class="contact-detail-value"><a
+                                href="mailto:info@berghemsmekaniska.se">info@berghemsmekaniska.se</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrap reveal">
+                <h3 class="contact-form-title">SKICKA FÖRFRÅGAN</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label class="form-label">Namn</label>
+                        <input type="text" class="form-input" placeholder="Ert namn" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">E-post</label>
+                        <input type="email" class="form-input" placeholder="namn@foretag.se" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Telefon</label>
+                        <input type="tel" class="form-input" placeholder="07XX-XX XX XX">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Meddelande</label>
+                        <textarea class="form-textarea" placeholder="Beskriv ert projekt eller ställ en fråga..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary form-submit">
+                        Skicka förfrågan
+                        <span class="btn-arrow">&rarr;</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-copy">&copy; 2026 Berghemsmekaniska. Alla rättigheter förbehållna.</div>
+            <div class="footer-links">
+                <a href="#tjanster">Tjänster</a>
+                <a href="#om-oss">Om oss</a>
+                <a href="#kontakt">Kontakt</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ═══════════ SPARK PARTICLES ═══════════ -->
+    <canvas id="sparks-canvas"></canvas>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
